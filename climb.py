@@ -12,12 +12,12 @@ def climb(n):
     a, b, c = n, 1, 0
     while b <= n:
         b <<= 1
-    res = []
+    results = []
     while b > 1:
         b >>= 1
         c <<= 1
         if b <= a:
             c += 1
             a -= b
-        res.append(c)
-    return res
+        results.append(c)
+    return results
